@@ -2,7 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     id("com.google.dagger.hilt.android")
-    id ("com.google.devtools.ksp")
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -72,9 +72,10 @@ dependencies {
     ksp(libs.dagger.compiler)
     ksp(libs.hilt.android.compiler.v2481)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
-
     // retrofit
     implementation(libs.retrofit)
     // gson converter
     implementation(libs.converter.gson)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.hilt.navigation.compose)
 }
