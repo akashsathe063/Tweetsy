@@ -71,4 +71,10 @@ dependencies {
     implementation(libs.hilt.android.v2481)
     ksp(libs.dagger.compiler)
     ksp(libs.hilt.android.compiler.v2481)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+
+    // retrofit
+    implementation(libs.retrofit)
+    // gson converter
+    implementation(libs.converter.gson)
 }
